@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+#reviewsection{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.choice-wrapper {
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+}
+
+input[type="radio"] {
+    margin-bottom: 5px;
+}
+
+button {
+    margin-top: 10px;
+}
