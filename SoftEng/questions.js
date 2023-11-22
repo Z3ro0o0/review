@@ -2,114 +2,162 @@ document.addEventListener("DOMContentLoaded", function () {
   // Sample questions
   const allQuestions = [
     {
-      question: "What is the capital of France?",
-      choices: ["A. Paris", "B. Berlin", "C. Madrid", "D. Rome"],
-      correctAnswer: "A. Paris",
-    },
-    {
-      question: "Who is the author of Harry Potter series?",
+      question: "What initiates systems projects?",
       choices: [
-        "A. J.K. Rowling",
-        "B. George R.R. Martin",
-        "C. Stephen King",
-        "D. J.R.R. Tolkien",
+        "A. Opportunities for improvement",
+        "B. Technical feasibility",
+        "C. Economic feasibility",
+        "D. Operational feasibility",
       ],
-      correctAnswer: "A. J.K. Rowling",
+      correctAnswer: "A. Opportunities for improvement",
     },
     {
-      question: "What is the largest mammal in the world?",
+      question:
+        "What is the primary responsibility of a systems analyst during project initiation?",
       choices: [
-        "A. Elephant",
-        "B. Blue Whale",
-        "C. Giraffe",
-        "D. Hippopotamus",
+        "A. Program coding",
+        "B. Problem definition with users",
+        "C. Hardware inventory",
+        "D. Cloud computing evaluation",
       ],
-      correctAnswer: "B. Blue Whale",
+      correctAnswer: "B. Problem definition with users",
     },
     {
-      question: "In which year did the Titanic sink?",
-      choices: ["A. 1905", "B. 1912", "C. 1920", "D. 1931"],
-      correctAnswer: "B. 1912",
-    },
-    {
-      question: "What is the capital of Japan?",
-      choices: ["A. Beijing", "B. Tokyo", "C. Seoul", "D. Bangkok"],
-      correctAnswer: "B. Tokyo",
-    },
-    {
-      question: "Who painted the Mona Lisa?",
+      question:
+        "What tools are commonly used for scheduling project activities?",
       choices: [
-        "A. Vincent van Gogh",
-        "B. Pablo Picasso",
-        "C. Leonardo da Vinci",
-        "D. Michelangelo",
+        "A. Mouse and keyboard",
+        "B. Gantt charts and PERT",
+        "C. Cloud computing",
+        "D. BYOD options",
       ],
-      correctAnswer: "C. Leonardo da Vinci",
+      correctAnswer: "B. Gantt charts and PERT",
     },
     {
-      question: "Which planet is known as the Red Planet?",
-      choices: ["A. Venus", "B. Mars", "C. Jupiter", "D. Saturn"],
-      correctAnswer: "B. Mars",
-    },
-    {
-      question: "What is the currency of Brazil?",
-      choices: ["A. Peso", "B. Dollar", "C. Real", "D. Euro"],
-      correctAnswer: "C. Real",
-    },
-    {
-      question: "Who wrote 'Romeo and Juliet'?",
+      question:
+        "Which feasibility focuses on adaptability and possibility of the proposed solution?",
       choices: [
-        "A. William Shakespeare",
-        "B. Jane Austen",
-        "C. Charles Dickens",
-        "D. Mark Twain",
+        "A. Economic feasibility",
+        "B. Technical feasibility",
+        "C. Operational feasibility",
+        "D. BYOD feasibility",
       ],
-      correctAnswer: "A. William Shakespeare",
+      correctAnswer: "B. Technical feasibility",
     },
     {
-      question: "Which element has the chemical symbol 'O'?",
-      choices: ["A. Oxygen", "B. Gold", "C. Silver", "D. Uranium"],
-      correctAnswer: "A. Oxygen",
-    },
-    {
-      question: "What is the world's longest river?",
-      choices: ["A. Nile", "B. Amazon", "C. Yangtze", "D. Mississippi"],
-      correctAnswer: "B. Amazon",
-    },
-    {
-      question: "Who invented the telephone?",
+      question: "What does economic feasibility assess in a project?",
       choices: [
-        "A. Alexander Graham Bell",
-        "B. Thomas Edison",
-        "C. Nikola Tesla",
-        "D. Marie Curie",
+        "A. Adaptability of the solution",
+        "B. Affordability of the project",
+        "C. Human resources availability",
+        "D. Willingness to use the system",
       ],
-      correctAnswer: "A. Alexander Graham Bell",
+      correctAnswer: "B. Affordability of the project",
     },
     {
-      question: "Which country is known as the Land of the Rising Sun?",
-      choices: ["A. China", "B. South Korea", "C. Japan", "D. Vietnam"],
-      correctAnswer: "C. Japan",
-    },
-    {
-      question: "What is the largest ocean on Earth?",
+      question: "Operational feasibility primarily focuses on:",
       choices: [
-        "A. Atlantic Ocean",
-        "B. Indian Ocean",
-        "C. Southern Ocean",
-        "D. Pacific Ocean",
+        "A. System adaptability",
+        "B. Human resources availability",
+        "C. Cloud computing",
+        "D. Economic viability",
       ],
-      correctAnswer: "D. Pacific Ocean",
+      correctAnswer: "B. Human resources availability",
     },
     {
-      question: "Who wrote 'To Kill a Mockingbird'?",
+      question: "What is the purpose of inventorying computer hardware?",
       choices: [
-        "A. J.K. Rowling",
-        "B. Harper Lee",
-        "C. Ernest Hemingway",
-        "D. F. Scott Fitzgerald",
+        "A. To assess cloud computing options",
+        "B. To avoid unnecessary purchases",
+        "C. To evaluate vendor support",
+        "D. To estimate workloads",
       ],
-      correctAnswer: "B. Harper Lee",
+      correctAnswer: "B. To avoid unnecessary purchases",
+    },
+    {
+      question:
+        "What does COTS stand for in the context of software development?",
+      choices: [
+        "A. Customized Options for Technical Solutions",
+        "B. Creating Operational Technical Systems",
+        "C. Commercial Off-The-Shelf",
+        "D. Cloud Operations and Technical Support",
+      ],
+      correctAnswer: "C. Commercial Off-The-Shelf",
+    },
+    {
+      question: "What does SaaS stand for in the context of software services?",
+      choices: [
+        "A. Systematic and Adaptive Software Solutions",
+        "B. Software as a Service",
+        "C. Systems and Applications Support",
+        "D. Secure Application and Software Services",
+      ],
+      correctAnswer: "B. Software as a Service",
+    },
+    {
+      question:
+        "When evaluating vendor support for software, what aspect is considered?",
+      choices: [
+        "A. BYOD options",
+        "B. Cloud computing",
+        "C. Technical feasibility",
+        "D. Vendor's commitment to support",
+      ],
+      correctAnswer: "D. Vendor's commitment to support",
+    },
+    {
+      question: "What is the purpose of the BYOD option in systems projects?",
+      choices: [
+        "A. To evaluate vendor support",
+        "B. To assess economic feasibility",
+        "C. To consider hardware and software needs",
+        "D. To allow employees to use personal devices",
+      ],
+      correctAnswer: "D. To allow employees to use personal devices",
+    },
+    {
+      question: "What does PERT stand for in project scheduling?",
+      choices: [
+        "A. Program Evaluation and Review Technique",
+        "B. Project Enhancement and Resource Tracking",
+        "C. Problem Evaluation and Resolution Tool",
+        "D. Project Execution and Result Tracking",
+      ],
+      correctAnswer: "A. Program Evaluation and Review Technique",
+    },
+    {
+      question:
+        "What is the focus of estimating workloads in project management?",
+      choices: [
+        "A. Human resources availability",
+        "B. Cloud computing options",
+        "C. Economic viability",
+        "D. Project resource requirements",
+      ],
+      correctAnswer: "D. Project resource requirements",
+    },
+    {
+      question:
+        "What does the term 'Bring Your Own Device (BYOD)' refer to in systems projects?",
+      choices: [
+        "A. Purchasing COTS software",
+        "B. Renting time and space in the cloud",
+        "C. Allowing employees to use personal devices",
+        "D. Creating custom software",
+      ],
+      correctAnswer: "C. Allowing employees to use personal devices",
+    },
+    {
+      question:
+        "What is the role of a systems analyst during project initiation?",
+      choices: [
+        "A. Program coding",
+        "B. Evaluating vendor support",
+        "C. Problem definition with users",
+        "D. Cloud computing assessment",
+      ],
+      correctAnswer: "C. Problem definition with users",
     },
   ];
 
