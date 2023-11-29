@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>SoftEng Reviewer</title>
+</head>
+<body>
+
+    <header>
+        <h1>Software Engineering Reviewer</h1>
+    </header>
+
+    <nav>
+        <a href="\index.html">Home |</a>
+        <a href="\review.html">Review |</a>
+        <a href="questions.html">SoftEngQuestions</a>
+    </nav>
+    <div id="mainbox">
+        <h2>Project Management</h2>
+        <h3>Introduction</h3>
+        <p class="definition">Systems projects begin with problems or with opportunities for 
+            improvement. Problems and opportunities are not the same
+        </p>
+        <p class="definition">Systems analyst works with users to create a problem definition.
+
+        </p>
+        <p class="definition">Once a project is suggested, the systems analyst works quickly
+            with decision makers.
+        </p>
+        <p class="definition">When project is approved the project activities are scheduled 
+            through the use of tools such as the Gantt charts and Programs Evaluation and 
+            Review Technique
+        </p>
+        <ol>
+            <li>Project Initiation</li>
+            <p class="definition">Clients experience problems.</p>
+            <p class="definition">They recognize opportunities for improvement through 
+                upgrading, altering, or installing new systems when they occur.</p>
+            <li>Determining Feasibility</li>
+                <ul>
+                    <li>Technical Feasibility</li>
+                    <p class="definition">To make sure that the solution is adaptable and 
+                        possible.</p>
+                    <a href="1.png"><img src="1.png" alt=""></a>
+                    <li>Economic Feasibility </li>
+                    <p class="definition">Can the company actually afford to do the project? 
+                        They have to pay the programmers.
+                    </p>
+                    <a href="2.png"><img src="2.png" alt=""></a>
+                    <li>Operational Feasibility </li>
+                    <p class="definition">More on human resources available. There is a 
+                        system, the question is, Will they use it? Focuses more on will. 
+                    </p>
+                    <a href="3.png"><img src="3.png" alt=""></a>
+                </ul>
+            <li>Ascertaining Hardware and Software Needs.</li>
+            <ul>
+                <li>Inventorying Computer Hardware</li>
+                <p class="definition">To not buy unnecessary things like mouse.</p>
+                <li>Estimate Workloads</li>
+                <li>Evaluating Computer Hardware for Purchase</li>
+                <li>Renting Time and Space in the Cloud</li>
+                <a href="4.png"><img src="4.png" alt=""></a>
+                <li>Evaluation of Vendor Support for Computer Hardware.</li>
+                <a href="5.png"><img src="5.png" alt=""></a>
+                <li>Understanding the Bring Your Own Device (BYOD) option.</li>
+                <li>Creating Custom Software.</li>
+                <p class="definition">Ready available, paliton lang nimo.</p>
+                <a href="6.png"><img src="6.png" alt=""></a>
+                <li>Purchasing COTS Software</li>
+                <li>Using the Services of a SaaS provider</li>
+                <li>Evaluation of Vendor Support for Software and SaaS</li>
+                <a href="7.png"><img src="7.png" alt=""></a>
+            </ul>   
+        </ol>
+
+    </div>
+    
+
+    <footer>
+        &copy; 2023 Q&A Website. All rights reserved.
+    </footer>
+
+    <div id="questions-container">
+        <!-- Questions will be appended here -->
+    </div>
+
+    <div id="score-container">
+        <p>Your Score: <span id="score">0</span></p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            generateQuestions();
+        });
+
+        function generateQuestions() {
+            var questionsContainer = document.getElementById('questions-container');
+            var paragraphs = document.querySelectorAll('.definition');
+
+            for (var i = 0; i < paragraphs.length; i++) {
+                var question = document.createElement('div');
+                question.className = 'question';
+                question.innerHTML = '<p>Question ' + (i + 1) + ': ' + paragraphs[i].textContent + '</p>';
+
+                // Add multiple-choice options
+                var options = ['A', 'B', 'C', 'D'];
+                for (var j = 0; j < options.length; j++) {
+                    var label = options[j] + ': <input type="radio" name="q' + i + '" value="' + options[j] + '"> ' + options[j] + ' ';
+                    question.innerHTML += label;
+                }
+
+                questionsContainer.appendChild(question);
+            }
+
+            // Add a button to calculate the score
+            var calculateButton = document.createElement('button');
+            calculateButton.textContent = 'Calculate Score';
+            calculateButton.addEventListener('click', calculateScore);
+            questionsContainer.appendChild(calculateButton);
+        }
+
+        function calculateScore() {
+            var questions = document.querySelectorAll('.question');
+            var score = 0;
+
+            for (var i = 0; i < questions.length; i++) {
+                var selectedOption = document.querySelector('input[name="q' + i + '"]:checked');
+
+                // Assuming the correct answer is 'C' for all questions
+                if (selectedOption && selectedOption.value === 'C') {
+                    score++;
+                }
+            }
+
+            // Display the score
+            var scoreElement = document.getElementById('score');
+            scoreElement.textContent = score;
+        }
+    </script>
+
+</body>
+</html>

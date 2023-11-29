@@ -159,6 +159,377 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       correctAnswer: "C. Problem definition with users",
     },
+    {
+      question: "What condition determines the choice of forecasting models?",
+      choices: [
+        "A. Availability of historical data",
+        "B. Economic feasibility",
+        "C. Operational feasibility",
+        "D. Tangible benefits",
+      ],
+      correctAnswer: "A. Availability of historical data",
+    },
+    {
+      question:
+        "Which method is used for forecasting when historical data is unavailable?",
+      choices: [
+        "A. Estimates from the sales force",
+        "B. Surveys to estimate customer demand",
+        "C. Delphi studies",
+        "D. All of the above",
+      ],
+      correctAnswer: "D. All of the above",
+    },
+    {
+      question:
+        "What is the differentiation between classes of techniques for forecasting with available historical data?",
+      choices: [
+        "A. Conditional or unconditional",
+        "B. Economic or operational",
+        "C. Tangible or intangible",
+        "D. Sure or unsure",
+      ],
+      correctAnswer: "A. Conditional or unconditional",
+    },
+    {
+      question:
+        "What are tangible benefits in the context of information systems?",
+      choices: [
+        "A. Measurable advantages in dollars",
+        "B. Difficult-to-measure advantages",
+        "C. Historical data",
+        "D. Judgment methods",
+      ],
+      correctAnswer: "A. Measurable advantages in dollars",
+    },
+    {
+      question:
+        "Which of the following is an example of an intangible benefit?",
+      choices: [
+        "A. Increase in processing speed",
+        "B. Access to inaccessible information",
+        "C. Improved decision-making process",
+        "D. Decrease in employee time",
+      ],
+      correctAnswer: "C. Improved decision-making process",
+    },
+    {
+      question: "What do tangible costs include?",
+      choices: [
+        "A. Cost of equipment and resources",
+        "B. Intangible costs",
+        "C. Cost of employee time",
+        "D. Unmeasurable costs",
+      ],
+      correctAnswer: "A. Cost of equipment and resources",
+    },
+    {
+      question:
+        "Which method can a systems analyst use to determine the break-even capacity of a proposed information system?",
+      choices: [
+        "A. Cash-flow analysis",
+        "B. Break-even analysis",
+        "C. Present value analysis",
+        "D. Earned value management",
+      ],
+      correctAnswer: "B. Break-even analysis",
+    },
+    {
+      question: "What does the break-even point represent in a project?",
+      choices: [
+        "A. The point of maximum profit",
+        "B. The point of minimum cost",
+        "C. The point of project initiation",
+        "D. The point where total costs intersect",
+      ],
+      correctAnswer: "D. The point where total costs intersect",
+    },
+    {
+      question:
+        "Which analysis examines the direction, size, and pattern of cash flow?",
+      choices: [
+        "A. Break-even analysis",
+        "B. Cash-flow analysis",
+        "C. Present value analysis",
+        "D. Time estimation analysis",
+      ],
+      correctAnswer: "B. Cash-flow analysis",
+    },
+    {
+      question: "What does present value analysis assess?",
+      choices: [
+        "A. Tangible benefits",
+        "B. Intangible benefits",
+        "C. Economic outlays and revenues over time",
+        "D. Project productivity goals",
+      ],
+      correctAnswer: "C. Economic outlays and revenues over time",
+    },
+    {
+      question: "When is the use of break-even analysis recommended?",
+      choices: [
+        "A. When benefits substantially improve with the proposed system",
+        "B. When the project needs to be justified in terms of cost",
+        "C. When tangible benefits form a convincing argument",
+        "D. When payback period is long",
+      ],
+      correctAnswer:
+        "B. When the project needs to be justified in terms of cost",
+    },
+    {
+      question:
+        "What approach is suitable when improved tangible benefits form a convincing argument for the proposed system?",
+      choices: [
+        "A. Break-even analysis",
+        "B. Payback analysis",
+        "C. Cash-flow analysis",
+        "D. Present value analysis",
+      ],
+      correctAnswer: "B. Payback analysis",
+    },
+    {
+      question: "When is cash-flow analysis recommended?",
+      choices: [
+        "A. When tangible benefits are convincing",
+        "B. When the project is not expensive",
+        "C. When the business would not be significantly affected by funds drain",
+        "D. When tangible benefits do not improve",
+      ],
+      correctAnswer:
+        "C. When the business would be significantly affected by a large drain on funds",
+    },
+    {
+      question: "In what situations is present value analysis beneficial?",
+      choices: [
+        "A. When the payback period is short",
+        "B. When the cost of borrowing money is low",
+        "C. When tangible benefits are convincing",
+        "D. When the payback period is long or the cost of borrowing money is high",
+      ],
+      correctAnswer:
+        "D. When the payback period is long or the cost of borrowing money is high",
+    },
+    {
+      question:
+        "What are the properties of tasks in a work breakdown structure (WBS)?",
+      choices: [
+        "A. Multiple deliverables from each task",
+        "B. Each task assigned to multiple individuals",
+        "C. Each task has no responsible person",
+        "D. Each task contains one deliverable and can be assigned to a single individual or group",
+      ],
+      correctAnswer:
+        "D. Each task contains one deliverable and can be assigned to a single individual or group",
+    },
+    {
+      question: "What is the purpose of a work breakdown structure (WBS)?",
+      choices: [
+        "A. To complicate project management",
+        "B. To break down tasks into smaller activities",
+        "C. To confuse team members",
+        "D. To increase project cost",
+      ],
+      correctAnswer: "B. To break down tasks into smaller activities",
+    },
+    {
+      question: "What does the process of analysis and design become unwieldy?",
+      choices: [
+        "A. When using analogies",
+        "B. When estimating time",
+        "C. When the system being developed is large",
+        "D. When using time estimation software",
+      ],
+      correctAnswer: "C. When the system being developed is large",
+    },
+    {
+      question: "What is one of the difficult tasks in project management?",
+      choices: [
+        "A. Break-even analysis",
+        "B. Forecasting benefits",
+        "C. Time estimation",
+        "D. Tangible costs estimation",
+      ],
+      correctAnswer: "C. Time estimation",
+    },
+    {
+      question:
+        "Which approach is used for cost estimation when a project requires something unique?",
+      choices: [
+        "A. Top-down approach",
+        "B. Bottom-up approach",
+        "C. Parametric modeling",
+        "D. Break-even analysis",
+      ],
+      correctAnswer: "B. Bottom-up approach",
+    },
+    {
+      question: "What is parametric modeling in cost estimation?",
+      choices: [
+        "A. Making estimates for project parameters",
+        "B. Estimating costs using historical data",
+        "C. Estimating costs without historical data",
+        "D. Making estimates for project features",
+      ],
+      correctAnswer: "A. Making estimates for project parameters",
+    },
+    {
+      question: "What does the top-down approach to cost estimation rely on?",
+      choices: [
+        "A. Historical data",
+        "B. Unique project features",
+        "C. Parametric modeling",
+        "D. Forecasting benefits",
+      ],
+      correctAnswer: "A. Historical data",
+    },
+    {
+      question: "When is customization possible in cost estimation?",
+      choices: [
+        "A. Top-down approach",
+        "B. Bottom-up approach",
+        "C. Parametric modeling",
+        "D. Forecasting benefits",
+      ],
+      correctAnswer: "B. Bottom-up approach",
+    },
+    {
+      question: "What does the top-down approach to cost estimation rely on?",
+      choices: [
+        "A. Historical data",
+        "B. Unique project features",
+        "C. Parametric modeling",
+        "D. Forecasting benefits",
+      ],
+      correctAnswer: "A. Historical data",
+    },
+    {
+      question: "What does the bottom-up approach to cost estimation involve?",
+      choices: [
+        "A. Using historical data",
+        "B. Making estimates for project parameters",
+        "C. Asking each responsible project team member to estimate costs",
+        "D. Estimating costs based on analogies",
+      ],
+      correctAnswer:
+        "C. Asking each responsible project team member to estimate costs",
+    },
+    {
+      question:
+        "What does the bottom-up approach to cost estimation depend on?",
+      choices: [
+        "A. Historical data",
+        "B. Unique project features",
+        "C. The abilities of team members",
+        "D. Parametric modeling",
+      ],
+      correctAnswer: "C. The abilities of team members",
+    },
+    {
+      question:
+        "What is an advantage of the top-down approach to cost estimation?",
+      choices: [
+        "A. Relies on team member abilities",
+        "B. Customization is possible",
+        "C. Considers historical data",
+        "D. Involves parametric modeling",
+      ],
+      correctAnswer: "C. Considers historical data",
+    },
+    {
+      question:
+        "What method involves making estimates for each project parameter?",
+      choices: [
+        "A. Top-down approach",
+        "B. Bottom-up approach",
+        "C. Parametric modeling",
+        "D. Earned value management",
+      ],
+      correctAnswer: "C. Parametric modeling",
+    },
+    {
+      question: "What does managing time using expediting involve?",
+      choices: [
+        "A. Time estimation techniques",
+        "B. Controlling costs using earned value management",
+        "C. Accelerating the completion of tasks",
+        "D. Comparing costs and benefits",
+      ],
+      correctAnswer: "C. Accelerating the completion of tasks",
+    },
+    {
+      question:
+        "What does controlling costs using earned value management involve?",
+      choices: [
+        "A. Time estimation techniques",
+        "B. Break-even analysis",
+        "C. Assessing direction, size, and pattern of cash flow",
+        "D. Measuring project performance against the plan",
+      ],
+      correctAnswer: "D. Measuring project performance against the plan",
+    },
+    {
+      question: "What is the purpose of assembling a project team?",
+      choices: [
+        "A. To increase project cost",
+        "B. To decrease project productivity",
+        "C. To complete projects on time and within budget",
+        "D. To complicate project management",
+      ],
+      correctAnswer: "C. To complete projects on time and within budget",
+    },
+    {
+      question:
+        "What is essential for a task to have in a work breakdown structure (WBS)?",
+      choices: [
+        "A. Multiple deliverables",
+        "B. Multiple responsible persons",
+        "C. Lack of monitoring and controlling performance",
+        "D. A single deliverable and a single responsible person",
+      ],
+      correctAnswer: "D. A single deliverable and a single responsible person",
+    },
+    {
+      question:
+        "What becomes unwieldy when the system being developed is large?",
+      choices: [
+        "A. Break-even analysis",
+        "B. Time estimation",
+        "C. Cash-flow analysis",
+        "D. Analysis and design process",
+      ],
+      correctAnswer: "D. Analysis and design process",
+    },
+    {
+      question: "What is one of the difficult tasks in project management?",
+      choices: [
+        "A. Break-even analysis",
+        "B. Forecasting benefits",
+        "C. Time estimation",
+        "D. Tangible costs estimation",
+      ],
+      correctAnswer: "C. Time estimation",
+    },
+    {
+      question:
+        "Which approach is used for cost estimation when a project requires something unique?",
+      choices: [
+        "A. Top-down approach",
+        "B. Bottom-up approach",
+        "C. Parametric modeling",
+        "D. Break-even analysis",
+      ],
+      correctAnswer: "B. Bottom-up approach",
+    },
+    {
+      question: "What is parametric modeling in cost estimation?",
+      choices: [
+        "A. Making estimates for project parameters",
+        "B. Estimating costs using historical data",
+        "C. Estimating costs without historical data",
+        "D. Making estimates for project features",
+      ],
+      correctAnswer: "A. Making estimates for project parameters",
+    },
   ];
 
   // Shuffle the array of questions
